@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="hourglass.svg">
+    <link rel="stylesheet" href="style.css">
+    <title>Custom Countdown</title>
+</head>
+<body>
+    <!-- for the video background -->
+    <video class="videoEl" muted loop autoplay>
+        <source src="videoCircle.mp4"></source>
+    </video>
+    <!-- for the video-overlay -->
+    <div class="video-overlay">
+    <!-- container for input and countdown -->
+    <div class="container">
+        <div class="input-container" hidden>
+            <h2>Create your Custom Countdown!</h2>
+            <form class="form" autocomplete="off">
+                <label for="title">Set a title</label>
+                <input type="text" id="title" placeholder="What are you counting to?!">
+                <label for="date-picker">Set a date</label>
+                <input type="date" id="date-picker">
+                <button type="submit">Let's create it!</button>
+            </form>
+        </div>
+        <div class="countdown" id="countdown" hidden>
+            <h2 id="countdown-title">Custom Counttime</h2>
+            <ul>
+                <li><span>3</span>Days</li>
+                <li><span>4</span>Hours</li>
+                <li><span>45</span>Minutes</li>
+                <li><span>23</span>Seconds</li>
+            </ul>
+            <button id="countdown-submit">I wanna RESET!</button>
+        </div>
+        <div class="complete" id="complete">
+            <h2 class="countdown-complete" style="margin-top:15%">Countdown Complete!</h1>
+            <h3 id="countdown-info">Ohho! Countdown got over on 05-05-2020</h1>
+            <button class="button-complete">Let's set a new countdown!</button>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

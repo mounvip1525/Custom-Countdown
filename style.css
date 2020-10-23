@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+html{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    margin:0;
+    padding:0;
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.videoEl{
+    height:auto;
+    width:100vw;
+}
+.video-overlay{
+    height:100vh;
+    width:100vw;
+    top:0;
+    left:0;
+    position:fixed;
+    background:rgba(0,0,0,.45);
+}
+.container{
+    width: 500px;
+    min-height: 335px;
+    display:flex;
+    justify-content: center;
+    color:white;
+    margin:120px auto;
+    background:rgba(37, 37, 37, 0.45);
+    z-index:150;
+    border-radius: 5px;
+    font-size:1rem;
+}
+h2{
+    font-size:30px;
+    text-align: center;
+    font-family:Nunito,sans-serif;
+}
+h3{
+    font-size:25px;
+}
+.input-container{
+    position:relative;
+    margin-top: 10px;
+}
+label{
+    font-size:20px;
+    font-family: 'Open Sans', sans-serif;
+}
+#title,#date-picker{
+    display:block;
+    width:300px;
+    margin:2%;
+    border-radius:5px;
+    height:30px;
+    border:none;
+    outline:none;
+    margin-left:15%;
+    padding:4px;
+    font-family:Nunito,sans-serif;
+}
+button{
+    border:none;
+    outline:none;
+    cursor:pointer;
+    border-radius:5px;
+    width:320px;
+    height:30px;
+    align-items:center;
+    margin-top:4%;
+    margin-left:14%;
+}
+button:hover{
+    transform:scale(1.1);
+    border:1px solid #3f00ff;
+}
+li{
+    list-style-type: none;
+    font-size:0.75rem;
+    display:inline-block;
+    text-transform: uppercase;
+    padding:12px;
+    text-align:center;
+    margin-left:-4%;
+    font-family:Nunito,sans-serif;
+}
+li span{
+    display:block;
+    font-size: 3rem;
+    font-family:Nunito,sans-serif;
+}
+/* Animated display */
+.countdown-complete{
+    animation: complete 4s infinite;
+}
+@keyframes complete{
+    0%{
+        color:rgba(189, 22, 240, 0.884);
+    }
+    25%{
+        color:rgba(206, 245, 32, 0.938);
+    }
+    50%{
+        color:rgba(18, 221, 109, 0.877);
+        transform:scale(1.2);
+    }
+    75%{
+        color:rgba(12, 209, 199, 0.918);
+    }
+    100%{
+        color:rgba(247, 53, 79, 0.959);
+    }
+}
+#countdown-submit{
+    margin-left:6%;
+}
+#countdown-complete{
+    margin-left:6%;
+}
+@media screen and (max-width:500px){
+    .videoEl{
+        height:100vh;
+        object-fit: cover;
+    }
+}
