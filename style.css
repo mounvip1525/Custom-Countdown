@@ -130,38 +130,4 @@ li span{
 .button-complete{
     margin-left:2%;
 }
-@media screen and (max-width:500px){
-    .videoEl{
-        height:100vh;
-        object-fit: cover;
-    }
-    .container{
-        margin-left:-16%;
-        margin-top:40%;
-    }
-    .countdown-container{
-        margin-left:12%;
-        margin-top:8%;
-    }
-    #countdown-reset{
-        margin-left:20%;
-    }
-    h2{
-        font-size:20px;
-    }
-    button{
-        width:60%;
-        margin-left:25%;
-    }
-    .countdown-complete{
-        font-size:30px;
-        margin-left:5.5%;
-    }
-    #countdown-info{
-        margin-left:3%;
-        font-size:23px;
-    }
-    .button-complete{
-        margin-left:27%;
-    }
-}
+
