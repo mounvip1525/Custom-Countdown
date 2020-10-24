@@ -16,30 +16,30 @@
     <div class="video-overlay">
     <!-- container for input and countdown -->
     <div class="container">
-        <div class="input-container" hidden>
+        <div class="input-container" id="input-container">
             <h2>Create your Custom Countdown!</h2>
-            <form class="form" autocomplete="off">
+            <form class="form" id="countdown-form" autocomplete="off">
                 <label for="title">Set a title</label>
                 <input type="text" id="title" placeholder="What are you counting to?!">
                 <label for="date-picker">Set a date</label>
                 <input type="date" id="date-picker">
-                <button type="submit">Let's create it!</button>
+                <button type="submit" id="button-reset">Let's create it!</button>
             </form>
         </div>
-        <div class="countdown" id="countdown" hidden>
-            <h2 id="countdown-title">Custom Counttime</h2>
+        <div class="countdown-container" id="countdown-container" hidden>
+            <h2 id="countdown-title"></h2>
             <ul>
-                <li><span>3</span>Days</li>
-                <li><span>4</span>Hours</li>
-                <li><span>45</span>Minutes</li>
-                <li><span>23</span>Seconds</li>
+                <li><span></span>Days</li>
+                <li><span></span>Hours</li>
+                <li><span></span>Minutes</li>
+                <li><span></span>Seconds</li>
             </ul>
-            <button id="countdown-submit">I wanna RESET!</button>
+            <button id="countdown-reset">I wanna RESET!</button>
         </div>
-        <div class="complete" id="complete">
+        <div class="complete-container" id="complete-container" hidden>
             <h2 class="countdown-complete" style="margin-top:15%">Countdown Complete!</h1>
-            <h3 id="countdown-info">Ohho! Countdown got over on 05-05-2020</h1>
-            <button class="button-complete">Let's set a new countdown!</button>
+            <h3 id="countdown-info"></h1>
+            <button class="button-complete" id="button-set">Let's set a new countdown!</button>
         </div>
     </div>
 </div>

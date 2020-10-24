@@ -28,7 +28,9 @@ body{
     width: 500px;
     min-height: 335px;
     display:flex;
+    flex-direction:column;
     justify-content: center;
+    align-items:center;
     color:white;
     margin:120px auto;
     background:rgba(37, 37, 37, 0.45);
@@ -68,12 +70,12 @@ button{
     border:none;
     outline:none;
     cursor:pointer;
-    border-radius:5px;
-    width:320px;
-    height:30px;
+    border-radius:19px;
+    width:350px;
+    height:40px;
     align-items:center;
     margin-top:4%;
-    margin-left:14%;
+    margin-left:11%;
 }
 button:hover{
     transform:scale(1.1);
@@ -81,12 +83,12 @@ button:hover{
 }
 li{
     list-style-type: none;
-    font-size:0.75rem;
+    font-size:1.2rem;
     display:inline-block;
     text-transform: uppercase;
     padding:12px;
     text-align:center;
-    margin-left:-4%;
+    margin-left:-2%;
     font-family:Nunito,sans-serif;
 }
 li span{
@@ -113,18 +115,28 @@ li span{
         color:rgba(12, 209, 199, 0.918);
     }
     100%{
-        color:rgba(247, 53, 79, 0.959);
+        color:rgba(252, 35, 187, 0.863);
     }
 }
 #countdown-submit{
     margin-left:6%;
 }
-#countdown-complete{
-    margin-left:6%;
+#countdown-reset{
+    margin-left:12%;
+}
+#countdown-info{
+    margin-top:-3%;
+} 
+.button-complete{
+    margin-left:2%;
 }
 @media screen and (max-width:500px){
     .videoEl{
         height:100vh;
         object-fit: cover;
+    }
+    button{
+        width:60%;
+        margin-left:15%;
     }
 }
