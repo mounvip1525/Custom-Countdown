@@ -33,7 +33,7 @@ body{
     align-items:center;
     color:white;
     margin:120px auto;
-    background:rgba(37, 37, 37, 0.45);
+    background:rgba(39, 38, 38, 0.45);
     z-index:150;
     border-radius: 5px;
     font-size:1rem;
@@ -42,17 +42,23 @@ h2{
     font-size:30px;
     text-align: center;
     font-family:Nunito,sans-serif;
+    margin-top:0;
+    padding-top:0;
+    text-transform: capitalize;
+    z-index:160;
 }
 h3{
-    font-size:25px;
+    font-size:20px;
 }
 .input-container{
     position:relative;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    padding:35px;
 }
 label{
     font-size:20px;
     font-family: 'Open Sans', sans-serif;
+    margin-left:15%;
 }
 #title,#date-picker{
     display:block;
@@ -63,33 +69,40 @@ label{
     border:none;
     outline:none;
     margin-left:15%;
-    padding:4px;
+    padding:4px 8px;
     font-family:Nunito,sans-serif;
 }
 button{
     border:none;
     outline:none;
     cursor:pointer;
-    border-radius:19px;
-    width:350px;
+    border-radius:15px;
+    width:50%;
     height:40px;
     align-items:center;
     margin-top:4%;
-    margin-left:11%;
+    margin-left:25%;
 }
 button:hover{
     transform:scale(1.1);
     border:1px solid #3f00ff;
 }
+ul{
+    padding:0;
+}
 li{
     list-style-type: none;
-    font-size:1.2rem;
+    font-size:1.1rem;
     display:inline-block;
     text-transform: uppercase;
     padding:12px;
     text-align:center;
-    margin-left:-2%;
+    /* margin-left:-2%; */
+    margin:2px;
     font-family:Nunito,sans-serif;
+    background:grey;
+    /* min-width:5%; */
+    width:17%;
 }
 li span{
     display:block;
@@ -99,6 +112,9 @@ li span{
 /* Animated display */
 .countdown-complete{
     animation: complete 4s infinite;
+}
+.complete-container{
+    padding:5px;
 }
 @keyframes complete{
     0%{
@@ -122,12 +138,12 @@ li span{
     margin-left:6%;
 }
 #countdown-reset{
-    margin-left:12%;
+    margin-left:25%;
 }
 #countdown-info{
     margin-top:-3%;
 } 
 .button-complete{
-    margin-left:2%;
+    margin-left:25%;
 }
 
